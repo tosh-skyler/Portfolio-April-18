@@ -1,31 +1,20 @@
 {
-  "name": "portfolio-tosh",
+  "name": "unit-16-portfolio",
   "version": "1.0.0",
-  "description": "Current portfolio as of April 18th, 2020.",
+  "description": "Portfolio for Skyler Tosh",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tosh-skyler/current-portfolio.git"
+    "url": "git+https://github.com/tosh-skyler/unit-16-portfolio.git"
   },
   "author": "tosh-skyler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tosh-skyler/current-portfolio/issues"
+    "url": "https://github.com/tosh-skyler/unit-16-portfolio/issues"
   },
-  "homepage": "https://github.com/tosh-skyler/current-portfolio#readme",
-  "dependencies": {
-    "concurrently": "^5.1.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.9"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+  "homepage": "https://github.com/tosh-skyler/unit-16-portfolio#readme"
 }
