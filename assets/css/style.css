@@ -1,109 +1,143 @@
-html, body {
-	height: 100%;
-	font-family: 'Varela Round', sans-serif;
+/* General Styling */
+html,
+body {
+  height: 100%;
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 body {
-	display: grid;
-	/* grip-gap: 10px; */
+  display: grid;
 }
-
 
 .grid-container {
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 30% 60% 10%;
-	gap: 2em 2em;
-	grid-template-areas: "header" "main-content" "footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .main-content {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "section-a" "section-b" "section-c";
-	grid-area: main-content;
-  }
-  
-  .section-b {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "portfolio-project-2" "portfolio-burger-app" "portfolio-team-profile";
-	grid-area: section-b;
-  }
-  
-  .portfolio-project-2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "portfolio-image portfolio-content";
-	grid-area: portfolio-project-2;
-  }
-  
-  .portfolio-image { grid-area: portfolio-image; }
-  
-  .portfolio-content { grid-area: portfolio-content; }
-  
-  .portfolio-burger-app {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "portfolio-image-2 portfolio-content-2";
-	grid-area: portfolio-burger-app;
-  }
-  
-  .portfolio-image-2 { grid-area: portfolio-image-2; }
-  
-  .portfolio-content-2 { grid-area: portfolio-content-2; }
-  
-  .portfolio-team-profile {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "portfolio-image-3 portfolio-content-3";
-	grid-area: portfolio-team-profile;
-  }
-  
-  .portfolio-image-3 { grid-area: portfolio-image-3; }
-  
-  .portfolio-content-3 { grid-area: portfolio-content-3; }
-  
-  .section-a {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 0px 0px;
-	grid-template-areas: "about-picture about-text";
-	grid-area: section-a;
-  }
-  
-  .about-picture { grid-area: about-picture; }
-  
-  .about-text { grid-area: about-text; }
-  
-  .section-c {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 90% 10%;
-	gap: 0px 0px;
-	grid-template-areas: "contact-form" "contact-information";
-	grid-area: section-c;
-  }
-  
-  .contact-form { grid-area: contact-form; }
-  
-  .contact-information { grid-area: contact-information; }
-  
-  .footer { grid-area: footer; }
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 60% 10%;
+  gap: 2em 2em;
+  grid-template-areas: "header" "main-content" "footer";
+}
+/* General Styling */
+
+/* HEADER */
+.header {
+  grid-area: header;
+}
+/* HEADER */
+
+/* MAIN CONTENT */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "section-a" "section-b" "section-c";
+  grid-area: main-content;
+}
+
+/* SECTION A */
+.section-a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "about-picture about-text";
+  grid-area: section-a;
+}
+
+.about-picture {
+  grid-area: about-picture;
+}
+
+.about-text {
+  grid-area: about-text;
+}
+/* SECTION A */
+
+/* SECTION B */
+.section-b {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "portfolio-project-2" "portfolio-burger-app" "portfolio-team-profile";
+  grid-area: section-b;
+}
+
+.portfolio-project-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "portfolio-image portfolio-content";
+  grid-area: portfolio-project-2;
+}
+
+.portfolio-image {
+  grid-area: portfolio-image;
+}
+
+.portfolio-content {
+  grid-area: portfolio-content;
+}
+
+.portfolio-burger-app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "portfolio-image-2 portfolio-content-2";
+  grid-area: portfolio-burger-app;
+}
+
+.portfolio-image-2 {
+  grid-area: portfolio-image-2;
+}
+
+.portfolio-content-2 {
+  grid-area: portfolio-content-2;
+}
+
+.portfolio-team-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "portfolio-image-3 portfolio-content-3";
+  grid-area: portfolio-team-profile;
+}
+
+.portfolio-image-3 {
+  grid-area: portfolio-image-3;
+}
+
+.portfolio-content-3 {
+  grid-area: portfolio-content-3;
+}
+/* SECTION B */
+
+/* SECTION C */
+.section-c {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  gap: 0px 0px;
+  grid-template-areas: "contact-form" "contact-information";
+  grid-area: section-c;
+}
+
+.contact-form {
+  grid-area: contact-form;
+}
+
+.contact-information {
+  grid-area: contact-information;
+}
+/* SECTION C */
+/* MAIN CONTENT */
+.footer {
+  grid-area: footer;
+}
