@@ -16,7 +16,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30% 60% 10%;
+  grid-template-rows: 20% 70% 10%;
   gap: 2em 2em;
   grid-template-areas: "header" "main-content" "footer";
 }
@@ -25,6 +25,33 @@ body {
 /* HEADER */
 .header {
   grid-area: header;
+  text-align: center;
+}
+
+#showcase {
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .bg-image {
+	position: absolute;
+	background: #333 url('../img/header-image.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+}
+
+#showcase h1 {
+	padding-top: 100px;
+	padding-bottom: 0;
+}
+
+#showcase .content-wrap, #section-a .content-wrap {
+	padding: 0 1.5em;
 }
 /* HEADER */
 
@@ -36,6 +63,8 @@ body {
   gap: 0px 0px;
   grid-template-areas: "section-a" "section-b" "section-c";
   grid-area: main-content;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 /* SECTION A */
@@ -50,10 +79,16 @@ body {
 
 .about-picture {
   grid-area: about-picture;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .about-text {
   grid-area: about-text;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 /* SECTION A */
 
@@ -78,10 +113,16 @@ body {
 
 .portfolio-image {
   grid-area: portfolio-image;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .portfolio-content {
   grid-area: portfolio-content;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .portfolio-burger-app {
@@ -95,10 +136,16 @@ body {
 
 .portfolio-image-2 {
   grid-area: portfolio-image-2;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .portfolio-content-2 {
   grid-area: portfolio-content-2;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .portfolio-team-profile {
@@ -112,10 +159,16 @@ body {
 
 .portfolio-image-3 {
   grid-area: portfolio-image-3;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .portfolio-content-3 {
   grid-area: portfolio-content-3;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 /* SECTION B */
 
@@ -131,6 +184,7 @@ body {
 
 .contact-form {
   grid-area: contact-form;
+  text-align: center;
 }
 
 .contact-information {
@@ -140,4 +194,5 @@ body {
 /* MAIN CONTENT */
 .footer {
   grid-area: footer;
+  text-align: center;
 }
