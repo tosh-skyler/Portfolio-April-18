@@ -80,15 +80,13 @@ body {
 .about-picture {
   grid-area: about-picture;
   text-align: center;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding: 2em;
 }
 
 .about-text {
   grid-area: about-text;
   text-align: center;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding: 2em;
 }
 /* SECTION A */
 
